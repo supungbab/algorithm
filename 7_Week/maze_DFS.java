@@ -42,7 +42,7 @@ public class Main {
                 //미로 범위를 벗어나면 무시
                 if(nx <0 || ny < 0 || nx >= N || ny >= M ) continue;
                 
-                //한 번 왔던 위치면 무시 , 괴물이 있는 위치면 무시
+                //최단 거리 입력
                 if (graph[nx][ny]==1 ){
                     graph[nx][ny] = graph[x][y] + 1;
                     stack.push(new Node(nx, ny));
